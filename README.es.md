@@ -4,8 +4,9 @@
 
 <br>
 
-Que instale tu APK, recorra todas las pantallas, verifique los textos, capture la evidencia y
-lea los errores — mientras tú haces otra cosa.
+**Tu agente instala el APK que acabas de compilar en un teléfono real o en un emulador, abre la
+app, toca por todas las pantallas, lee los textos que salen de verdad, detecta los fallos y te
+enseña la evidencia.** Pruebas automáticas, hechas por el agente que ya usas.
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-nativo-D97757?style=flat-square)](https://claude.com/claude-code)
 [![Codex](https://img.shields.io/badge/Codex-compatible-000000?style=flat-square)](https://openai.com/codex)
@@ -26,6 +27,10 @@ lea los errores — mientras tú haces otra cosa.
 > **Sin MCP. Sin herramientas de pago. Sin instaladores.**
 > Solo `adb`, una guía que lee tu agente, y **6 trampas verificadas** que si no te costarían
 > una tarde cada una.
+
+Esos fallos de interfaz y de textos que solo se ven con la app ya instalada —una palabra
+cortada, un botón que no hace nada, una pantalla que revienta en un teléfono modesto— tu
+agente los encuentra ahora, en cada compilación, sin que toques el teléfono.
 
 ## Por qué existe
 

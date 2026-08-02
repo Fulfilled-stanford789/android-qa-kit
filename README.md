@@ -4,8 +4,9 @@
 
 <br>
 
-Let it install your APK, walk every screen, verify the text, capture evidence and read the
-crash logs — while you do something else.
+**Your agent installs the APK you just compiled on a real phone or an emulator, opens the app,
+taps through every screen, reads the text that's actually on it, catches the crashes and shows
+you the evidence.** Automated QA, done by the agent you already use.
 
 [![Claude Code](https://img.shields.io/badge/Claude_Code-native-D97757?style=flat-square)](https://claude.com/claude-code)
 [![Codex](https://img.shields.io/badge/Codex-supported-000000?style=flat-square)](https://openai.com/codex)
@@ -26,6 +27,10 @@ crash logs — while you do something else.
 > **No MCP. No paid tools. No installers.**
 > Just `adb`, a guide your agent reads, and **6 verified traps** that would otherwise cost you
 > an afternoon each.
+
+Those interface and copy bugs you only spot once the app is actually installed — cut-off text,
+a button that does nothing, a screen that crashes on a low-end phone — your agent finds them
+now, on every build, without you touching the phone.
 
 ## Why this exists
 

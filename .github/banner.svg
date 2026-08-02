@@ -67,9 +67,9 @@
   <g transform="translate(730,0)">
     <text x="0" y="150" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="52" font-weight="700" fill="#FFFFFF" letter-spacing="-1.5">android-qa-kit</text>
     <rect x="2" y="168" width="96" height="4" rx="2" fill="url(#accent)"/>
-    <text font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="18" fill="#93A6C4">
-      <tspan x="0" y="206">Turn your coding agent into your</tspan>
-      <tspan x="0" y="232">Android QA engineer.</tspan>
+    <text font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="17" fill="#93A6C4">
+      <tspan x="0" y="204">Make your coding agent test your real</tspan>
+      <tspan x="0" y="229">compiled app and find the bugs.</tspan>
     </text>
     <g transform="translate(0,262)">
       <rect x="0" y="0" width="112" height="26" rx="13" fill="#132038" stroke="#22314F"/>
