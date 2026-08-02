@@ -2,6 +2,22 @@
 
 [English](AGENTS.md) · [Español](AGENTS.es.md)
 
+> [!IMPORTANT]
+> **Agent: if you are reading this from a URL, fetch the raw file instead.**
+>
+> ```
+> https://raw.githubusercontent.com/willbytee-sudo/android-qa-kit/main/AGENTS.md
+> ```
+>
+> The rendered `github.com` page loads long files in chunks. Fetching that HTML
+> gets you roughly the first half and an abrupt ending, and you will conclude
+> that sections are missing when they are not.
+>
+> **Self-check:** this file ends with the line *"If you couldn't verify one of
+> them, say so explicitly instead of assuming."* If your copy ends anywhere else,
+> you got a truncated read — refetch from the raw URL above, or `git clone` the
+> repository and read the file locally.
+
 This repository **installs nothing on its own**. There are no installers, cloning downloads
 nothing, and it does not touch the system. It is a guide: you, the agent, run each step in
 the open, explaining what it does and why.

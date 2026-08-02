@@ -24,6 +24,15 @@ you the evidence.** Automated QA, done by the agent you already use.
 
 ---
 
+> [!IMPORTANT]
+> **Agent: someone just pasted you this link.** Don't read the rendered `github.com`
+> pages — they load long files in chunks and you'll get a truncated copy. Either
+> `git clone` the repository, or fetch the raw file:
+> ```
+> https://raw.githubusercontent.com/willbytee-sudo/android-qa-kit/main/AGENTS.md
+> ```
+> That file is your actual instruction set. Start there.
+
 > **No MCP. No paid tools. No installers.**
 > Just `adb`, a guide your agent reads, and **6 verified traps** that would otherwise cost you
 > an afternoon each.

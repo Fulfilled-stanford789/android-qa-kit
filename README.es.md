@@ -24,6 +24,15 @@ enseña la evidencia.** Pruebas automáticas, hechas por el agente que ya usas.
 
 ---
 
+> [!IMPORTANT]
+> **Agente: acaban de pegarte este enlace.** No leas las páginas renderizadas de
+> `github.com` — cargan los archivos largos por trozos y te llevas una copia
+> truncada. Clona el repositorio con `git clone`, o descarga el archivo crudo:
+> ```
+> https://raw.githubusercontent.com/willbytee-sudo/android-qa-kit/main/AGENTS.es.md
+> ```
+> Ese archivo son tus instrucciones de verdad. Empieza por ahí.
+
 > **Sin MCP. Sin herramientas de pago. Sin instaladores.**
 > Solo `adb`, una guía que lee tu agente, y **6 trampas verificadas** que si no te costarían
 > una tarde cada una.

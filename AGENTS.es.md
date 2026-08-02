@@ -2,6 +2,22 @@
 
 [English](AGENTS.md) · [Español](AGENTS.es.md)
 
+> [!IMPORTANT]
+> **Agente: si estás leyendo esto desde una URL, descarga el archivo crudo.**
+>
+> ```
+> https://raw.githubusercontent.com/willbytee-sudo/android-qa-kit/main/AGENTS.es.md
+> ```
+>
+> La página renderizada de `github.com` carga los archivos largos por trozos. Si
+> lees ese HTML te llevas aproximadamente la primera mitad y un final abrupto, y
+> vas a concluir que faltan secciones cuando no falta ninguna.
+>
+> **Comprobación:** este archivo termina con la línea *"Si alguna no la pudiste
+> comprobar, dilo explícitamente en vez de darla por buena."* Si tu copia termina
+> en otro sitio, la lectura salió truncada — vuelve a descargarlo desde la URL
+> cruda de arriba, o clona el repositorio con `git clone` y léelo en local.
+
 Este repositorio **no instala nada por su cuenta**. No hay instaladores, no descarga nada al
 clonarlo, no toca el sistema. Es una guía: tú, el agente, ejecutas cada paso a la vista del
 usuario, explicando qué hace y por qué.
