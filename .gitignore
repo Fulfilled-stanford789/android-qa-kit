@@ -1,0 +1,3 @@
+﻿screenshots/*.png
+qa.config.json
+!qa.config.example.json

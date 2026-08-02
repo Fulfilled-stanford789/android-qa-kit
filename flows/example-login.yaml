@@ -1,0 +1,34 @@
+# Flujo de ejemplo para Maestro.
+# Ejecutar con:  .\qa.ps1 flujo ejemplo-login.yaml
+#
+# Cambia el appId por el de tu app. Verifícalo con:
+#   adb shell pm list packages
+# El nombre del paquete que crees que tiene tu app y el que trae el APK
+# no siempre coinciden — y si no cuadran, Maestro no la encuentra.
+
+appId: com.ejemplo.miapp
+name: Login y navegación básica
+---
+- launchApp:
+    clearState: true
+
+# Que la pantalla de entrada aparezca
+- assertVisible: "Email"
+- assertVisible: "Contraseña"
+
+# Rellenar y entrar
+- tapOn: "Email"
+- inputText: "prueba@ejemplo.com"
+- tapOn: "Contraseña"
+- inputText: "contraseña-de-prueba"
+- tapOn: "Ingresar"
+
+# Que efectivamente entró
+- assertVisible:
+    text: "Inicio"
+    timeout: 15000
+
+# Que no se quedó ningún error visible
+- assertNotVisible:
+    text: ".*[Ee]rror.*"
+    optional: true
