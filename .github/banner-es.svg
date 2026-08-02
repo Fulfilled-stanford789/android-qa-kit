@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="android-qa-kit — convierte a tu agente de código en tu ingeniero de QA Android">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1020"/>
+      <stop offset="55%" stop-color="#111A2E"/>
+      <stop offset="100%" stop-color="#0A0F1C"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3DDC84"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3DDC84" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#3DDC84" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.1" fill="#3DDC84" opacity="0.10"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="380" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="380" rx="18" fill="url(#dots)"/>
+  <ellipse cx="1000" cy="150" rx="330" ry="230" fill="url(#glow)"/>
+
+  <!-- ================= izquierda: terminal del agente ================= -->
+  <g transform="translate(74,104)">
+    <rect x="0" y="0" width="330" height="176" rx="12" fill="#0E1526" stroke="#1E2B45" stroke-width="1.5"/>
+    <rect x="0" y="0" width="330" height="34" rx="12" fill="#152036"/>
+    <rect x="0" y="24" width="330" height="10" fill="#152036"/>
+    <circle cx="22" cy="17" r="5" fill="#FF5F57"/>
+    <circle cx="41" cy="17" r="5" fill="#FEBC2E"/>
+    <circle cx="60" cy="17" r="5" fill="#28C840"/>
+    <text x="165" y="22" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#5B6B87" text-anchor="middle">tu agente de código</text>
+
+    <text font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5">
+      <tspan x="20" y="66" fill="#3DDC84">$</tspan><tspan fill="#C9D6EA"> adb install app.apk</tspan>
+      <tspan x="20" y="90" fill="#8FA3C0">Success</tspan>
+      <tspan x="20" y="118" fill="#3DDC84">$</tspan><tspan fill="#C9D6EA"> adb shell uiautomator dump</tspan>
+      <tspan x="20" y="142" fill="#8FA3C0">25 elements</tspan>
+      <tspan x="20" y="166" fill="#3DDC84">$</tspan><tspan fill="#C9D6EA"> _</tspan>
+    </text>
+  </g>
+
+  <!-- ================= flecha central ================= -->
+  <g transform="translate(430,192)">
+    <line x1="0" y1="0" x2="86" y2="0" stroke="url(#accent)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 7"/>
+    <path d="M86 -7 L102 0 L86 7 Z" fill="#22D3EE"/>
+    <text x="51" y="-18" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#4E9FD1" text-anchor="middle">adb</text>
+    <text x="51" y="28" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#3A4A66" text-anchor="middle">usb · wifi</text>
+  </g>
+
+  <!-- ================= teléfono ================= -->
+  <g transform="translate(566,96)">
+    <rect x="0" y="0" width="112" height="192" rx="16" fill="#0E1526" stroke="#2A3B5C" stroke-width="2"/>
+    <rect x="8" y="16" width="96" height="160" rx="6" fill="#0A1120"/>
+    <rect x="44" y="7" width="24" height="4" rx="2" fill="#2A3B5C"/>
+    <rect x="20" y="34" width="72" height="7" rx="3.5" fill="#1D2B47"/>
+    <rect x="20" y="50" width="52" height="7" rx="3.5" fill="#1D2B47"/>
+    <rect x="20" y="70" width="72" height="22" rx="5" fill="#132038" stroke="#22314F" stroke-width="1"/>
+    <rect x="20" y="100" width="72" height="22" rx="5" fill="#132038" stroke="#22314F" stroke-width="1"/>
+    <rect x="20" y="132" width="72" height="20" rx="10" fill="#1B4D3A" stroke="#3DDC84" stroke-width="1.2"/>
+    <circle cx="86" cy="166" r="15" fill="#3DDC84"/>
+    <path d="M79.5 166 l4.5 4.5 l8.5 -9" stroke="#0B1020" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= título ================= -->
+  <g transform="translate(730,0)">
+    <text x="0" y="150" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="52" font-weight="700" fill="#FFFFFF" letter-spacing="-1.5">android-qa-kit</text>
+    <rect x="2" y="168" width="96" height="4" rx="2" fill="url(#accent)"/>
+    <text font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif" font-size="18" fill="#93A6C4">
+      <tspan x="0" y="206">Convierte a tu agente de código</tspan>
+      <tspan x="0" y="232">en tu ingeniero de QA Android.</tspan>
+    </text>
+    <g transform="translate(0,262)">
+      <rect x="0" y="0" width="112" height="26" rx="13" fill="#132038" stroke="#22314F"/>
+      <text x="56" y="17" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="11.5" fill="#8FA3C0" text-anchor="middle">no MCP</text>
+      <rect x="122" y="0" width="156" height="26" rx="13" fill="#132038" stroke="#22314F"/>
+      <text x="200" y="17" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="11.5" fill="#8FA3C0" text-anchor="middle">sin instaladores</text>
+      <rect x="288" y="0" width="196" height="26" rx="13" fill="#1B4D3A" stroke="#3DDC84"/>
+      <text x="386" y="17" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="11.5" fill="#3DDC84" text-anchor="middle">6 trampas verificadas</text>
+    </g>
+  </g>
+</svg>

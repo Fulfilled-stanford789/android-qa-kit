@@ -1,8 +1,8 @@
 <div align="center">
 
-# android-qa-kit
+<img src=".github/banner-es.svg" alt="android-qa-kit — convierte a tu agente de código en tu ingeniero de QA de Android" width="100%">
 
-**Convierte a tu agente de código en tu ingeniero de QA de Android.**
+<br>
 
 Que instale tu APK, recorra todas las pantallas, verifique los textos, capture la evidencia y
 lea los errores — mientras tú haces otra cosa.
