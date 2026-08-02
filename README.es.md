@@ -77,6 +77,15 @@ idea.
 
 ## Empezar
 
+Instálalo como skill — sigue el estándar abierto [Agent Skills](https://agentskills.io), así que
+funciona en Claude Code, Codex, Cursor y todo lo que lo soporte:
+
+```bash
+npx skills add willbytee-sudo/android-qa-kit
+```
+
+O simplemente clónalo:
+
 ```bash
 git clone https://github.com/willbytee-sudo/android-qa-kit
 ```
